@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+  devise_for :users
+  root 'homes#top'
+  get 'homes/top'
 end
